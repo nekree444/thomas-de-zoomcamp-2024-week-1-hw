@@ -6,12 +6,12 @@ variable "region" {
 
 variable "project" {
   description = "Project"
-  default     = "rich-wavelet-408011"
+  default     = "de-zoomcamp-week1-thomas"
 }
 
 variable "credentials" {
   description = "Project Credentials"
-  default     = "/workspaces/thomas-de-zoomcamp-week-1/week_1_basics_n_setup/1_terraform_gcp/terraform/keys/my-creds.json"
+  default     = "/workspaces/thomas-de-zoomcamp-2024-week-1-hw/week_1_basics_n_setup/1_terraform_gcp/terraform/keys/my-creds.json"
 }
 
 variable "location" {
@@ -26,7 +26,7 @@ variable "bq_dataset_name" {
 
 variable "gcs_bucket_name" {
   description = "My storage bucket name"
-  default     = "rich-wavelet-408011-terra-bucket"
+  default     = "de-zoomcamp-week1-thomas-terra-bucket"
 }
 
 variable "gcs_storage_class" {
