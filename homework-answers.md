@@ -17,7 +17,8 @@ WHERE
 DATE function makes the returns only date from datetime. The count returns 15612.
 
 Q4. 
-```SELECT 
+```
+SELECT 
 	DATE(lpep_pickup_datetime), 
 	trip_distance
 FROM
@@ -28,11 +29,13 @@ WHERE
 	DATE(lpep_pickup_datetime) = '09/26/2019' OR
 	DATE(lpep_pickup_datetime) = '09/21/2019'
 ORDER BY
-	trip_distance DESC```
+	trip_distance DESC
+```
 Shows trip distance in descending order for the specified dates. According to the pdf this is the distance in miles, so the max distance is 341.64 miles on 2019-09-26
 
 Q5. 
-```SELECT
+```
+SELECT
 	"Borough", 
 	ROUND(sum(total_amount))
 FROM
@@ -42,11 +45,13 @@ FROM
 GROUP BY
 	"Borough"
 ORDER BY
-	sum(total_amount) DESC```
+	sum(total_amount) DESC
+```
 Shows the rounded total amount values for each borough (rounded for visual) and sorted by the total amount. The 3 boroughs were Brooklyn, Queens, Manhatten
 
 Q6. 
-```SELECT
+```
+SELECT
 	tip_amount, 
 	"Zone"
 FROM
@@ -58,13 +63,15 @@ WHERE
 ORDER BY
 	tip_amount DESC
 LIMIT 
-	1```
+	1
+```
 This returns a $62.31 tip to JFK Airport
 
 # Terraform
 
 Q7. 
-```Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+```
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
 
 Terraform will perform the following actions:
@@ -124,4 +131,5 @@ Do you want to perform these actions?
   Terraform will perform the actions described above.
   Only 'yes' will be accepted to approve.
 
-  Enter a value:```
+  Enter a value:
+```
