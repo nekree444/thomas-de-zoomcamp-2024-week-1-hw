@@ -12,7 +12,8 @@ FROM
 	green_taxi_data
 WHERE
 	DATE(lpep_pickup_datetime) = '09/18/2019' AND
-	DATE(lpep_dropoff_datetime) = '09/18/2019'```
+	DATE(lpep_dropoff_datetime) = '09/18/2019'
+```
 DATE function makes the returns only date from datetime. The count returns 15612.
 
 Q4. 
